@@ -25,6 +25,7 @@ class Login : AppCompatActivity() {
 
             val loginButton : Button = findViewById(R.id.loginBtn)
             loginButton.setOnClickListener{
+                Toast.makeText(this, "Chill A Minute ☝", Toast.LENGTH_SHORT).show()
 
                 val api: String = Constants.BASE_URL + "/employee/signin"
                 val body = JSONObject()

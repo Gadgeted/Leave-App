@@ -49,14 +49,15 @@
                 android:id="@+id/textAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$328"
+                android:layout_marginEnd="16dp"
+                android:text="Notified"
                 android:textColor="@color/primary"
                 android:textSize="@dimen/_14ssp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.505" />
 
             <TextView
                 android:id="@+id/textTitle"
@@ -64,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginRight="@dimen/_8sdp"
-                android:text="Hyaluronic Acid"
+                android:text="Notifications"
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintEnd_toStartOf="@+id/textAmount"
@@ -86,7 +87,7 @@
                 android:id="@+id/textLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Benny"
+                android:text="............................"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/_10ssp"
                 app:layout_constraintBottom_toBottomOf="@id/imgLocation"
@@ -98,7 +99,7 @@
                 android:id="@+id/textTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9am - 7mp"
+                android:text="Notification From Manager"
                 android:textColor="@color/secondary_text"
                 android:layout_marginTop="@dimen/_4sdp"
                 android:textSize="@dimen/_10ssp"

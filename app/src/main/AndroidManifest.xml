@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LeaveApp"
         tools:targetApi="31">
         <activity
+            android:name=".FormActivity"
+            android:exported="false" />
+        <activity
             android:name=".BottomNavigation"
             android:exported="false" />
         <activity
@@ -24,7 +27,9 @@
         <activity
             android:name=".SignIn"
             android:exported="false" />
-
+        <activity
+            android:name=".Dialog"
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="true">

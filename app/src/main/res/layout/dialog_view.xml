@@ -32,13 +32,13 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="50dp"
             android:gravity="center_horizontal"
-            android:text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, quasi."
+            android:text="congrats!!, your leave application is sent successfully Please WAit for response from the manager"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"

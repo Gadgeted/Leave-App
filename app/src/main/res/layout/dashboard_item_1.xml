@@ -23,6 +23,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/viewprofile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_50sdp"
@@ -48,7 +49,7 @@
                 android:id="@+id/textAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_189"
+                android:text="EMP 1"
                 android:textColor="@color/primary"
                 android:textSize="@dimen/_14ssp"
                 android:textStyle="bold"
@@ -63,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginRight="@dimen/_8sdp"
-                android:text="@string/thin_face_needle"
+                android:text="View Profile"
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintEnd_toStartOf="@+id/textAmount"
@@ -85,7 +86,7 @@
                 android:id="@+id/textLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/north_sylvaland"
+                android:text="..................."
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/_10ssp"
                 app:layout_constraintBottom_toBottomOf="@id/imgLocation"
@@ -97,7 +98,7 @@
                 android:id="@+id/textTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_10am_6pm"
+                android:text="Personal Identity"
                 android:textColor="@color/secondary_text"
                 android:layout_marginTop="@dimen/_4sdp"
                 android:textSize="@dimen/_10ssp"

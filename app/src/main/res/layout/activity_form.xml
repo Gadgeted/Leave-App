@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Your Prefered Leave Type"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/my_secondary"
+                android:textStyle="bold"
+                android:freezesText="true"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupLeaveType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSickLeave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sick Leave" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonVacation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vacation" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMaternity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maternity Leave" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPaternity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paternity Leave" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupLeaveType"
+                android:text="Start Date"
+                android:layout_marginTop="16dp"/>
+
+            <DatePicker
+                android:id="@+id/datePickerStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewStartDate"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/datePickerStart"
+                android:text="End Date"
+                android:layout_marginTop="16dp"/>
+
+            <DatePicker
+                android:id="@+id/datePickerEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEndDate"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/datePickerEnd"
+                android:hint="Reason for Leave"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/buttonApplyLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextReason"
+                android:layout_centerHorizontal="true"
+                android:text="Send Application"
+                android:layout_marginTop="16dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
