@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Leave App</string>
+    <string name="record">Record</string>
+    <string name="short_views">Short Views</string>
+    <string name="more">More</string>
+    <string name="impacted">Impacted</string>
+    <string name="_149">149</string>
+    <string name="_395">395</string>
+    <string name="clients">Clients</string>
+    <string name="following">Following</string>
+    <string name="_820">820</string>
+    <string name="_186">$186</string>
+    <string name="thin_face_needle">Thin face needle</string>
+    <string name="_189">$189</string>
+    <string name="north_sylvaland">North Sylvaland</string>
+    <string name="_10am_6pm">10am - 6pm</string>
+</resources>
