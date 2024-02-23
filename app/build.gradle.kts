@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.fire1.leaveapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.fire1.leaveapp"
@@ -48,6 +48,8 @@ dependencies {
     implementation("com.intuit.sdp:sdp-android:1.0.6")
     implementation("com.intuit.ssp:ssp-android:1.0.6")
 
+
+//    implementation("com.android.support:appcompat-v7:25.3.1")
 
 
 }

@@ -5,43 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".MainActivity">
-
+    tools:context=".Profile">
 
     <View
         android:id="@+id/viewHeaderBackground"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_125sdp"
+        android:layout_height="@dimen/_200sdp"
         android:background="@color/my_primary"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/person_icon"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+
     <TextView
-        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginLeft="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:text="@string/record"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_20ssp"
+        android:text="Collins Ngunyi"
+        android:textColor="#fff"
+        android:textSize="21sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="@dimen/_26sdp"
-        android:layout_height="@dimen/_26sdp"
-        android:layout_marginEnd="@dimen/_16sdp"
-        android:layout_marginRight="@dimen/_16sdp"
-        android:src="@drawable/search_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/textTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textTitle"
-        app:tint="@color/white" />
-
-
-
+        app:flow_horizontalAlign="center"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="150dp" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardHeader"
@@ -60,27 +51,9 @@
             android:layout_height="wrap_content"
             android:padding="@dimen/_14sdp">
 
-            <TextView
-                android:id="@+id/textViews"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/short_views"
-                android:textColor="@color/primary_text"
-                android:textSize="@dimen/_14ssp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/more"
-                android:textColor="@color/primary"
-                android:textSize="@dimen/_12ssp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+
 
             <!--Start of Client Layout-->
             <LinearLayout
@@ -91,21 +64,16 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toStartOf="@+id/layoutImpact"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textViews">
+                app:layout_constraintStart_toStartOf="parent">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_28sdp"
-                    android:layout_height="@dimen/_28sdp"
-                    android:src="@drawable/client_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_4sdp"
-                    android:text="@string/clients"
+                    android:text="photos"
                     android:textColor="@color/secondary_text"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_15ssp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -126,21 +94,16 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toStartOf="@+id/layoutFollowing"
-                app:layout_constraintStart_toEndOf="@+id/layoutClient"
-                app:layout_constraintTop_toBottomOf="@id/textViews">
+                app:layout_constraintStart_toEndOf="@+id/layoutClient">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_28sdp"
-                    android:layout_height="@dimen/_28sdp"
-                    android:src="@drawable/impacted_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_4sdp"
-                    android:text="@string/impacted"
+                    android:text="followers"
                     android:textColor="@color/secondary_text"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_15ssp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -161,13 +124,8 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/layoutImpact"
-                app:layout_constraintTop_toBottomOf="@id/textViews">
+                app:layout_constraintStart_toEndOf="@+id/layoutImpact">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_28sdp"
-                    android:layout_height="@dimen/_28sdp"
-                    android:src="@drawable/following_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -175,7 +133,7 @@
                     android:layout_margin="@dimen/_4sdp"
                     android:text="@string/following"
                     android:textColor="@color/secondary_text"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_15ssp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,15 +162,97 @@
         app:layout_constraintTop_toBottomOf="@id/cardHeader">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp">
 
-            <include layout="@layout/dashboard_item_1"/>
-            <include layout="@layout/dashboard_item_2"/>
-            <include layout="@layout/dashboard_item_3"/>
-            <include layout="@layout/dashboard_item_4"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/email_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:text="collinsmaina1921@gmail.com"
+                    android:layout_gravity="center_vertical"/>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/phone_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:text="+254 797 341 497"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/group_add_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:text="Add to group"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/forum_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:text="Show all Comments"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply for Leave"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
 
         </LinearLayout>
 

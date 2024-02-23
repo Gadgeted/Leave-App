@@ -13,7 +13,10 @@
         android:theme="@style/Theme.LeaveApp"
         tools:targetApi="31">
         <activity
-            android:name=".Dialog"
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SignIn"
@@ -22,7 +25,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Dialog"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

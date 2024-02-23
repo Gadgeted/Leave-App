@@ -17,8 +17,20 @@
     <color name="dashboard_item_3">#72A4FF</color>
     <color name="dashboard_item_4">#8B72FF</color>
 
-    
-    
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#292b3d</color>
+    <color name="greylight">#fafafa</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+
+
+
+
+
     <color name="my_primary">#5E35b1</color>
     <color name="my_secondary">#673Ab7</color>
 
