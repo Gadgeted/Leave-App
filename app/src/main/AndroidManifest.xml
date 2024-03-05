@@ -17,7 +17,7 @@
             android:exported="false" />
         <activity
             android:name=".Profile"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -29,7 +29,7 @@
             android:exported="false" />
         <activity
             android:name=".Dialog"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
