@@ -161,7 +161,7 @@
                     android:layout_height="40dp"
                     android:layout_margin="12dp"
                     android:background="beige"
-                    android:src="@drawable/"/>
+         android:src="@drawable/client-icon.jpg"/>
 
 
             </LinearLayout>
