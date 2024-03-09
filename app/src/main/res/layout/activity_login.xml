@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:text="Emil Address"
                 android:alpha="0.7"
-                android:textStyle="italics"/>
+                android:textStyle="bold"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -149,7 +149,9 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_margin="12dp" />
+                    android:layout_margin="12dp"
+                    android: background="@drawable/#000"
+                    android:src/>
 
                 <ImageView
                     android:layout_width="40dp"
@@ -160,8 +162,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_margin="12dp"
-                    android:background="beige"
-         android:src="@drawable/client-icon.jpg"/>
+                    android:background="beige"/>
 
 
             </LinearLayout>
