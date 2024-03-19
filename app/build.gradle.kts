@@ -47,6 +47,7 @@ dependencies {
 
     implementation("com.intuit.sdp:sdp-android:1.0.6")
     implementation("com.intuit.ssp:ssp-android:1.0.6")
+    implementation("com.loopj.android:android-async-http:1.4.11")
 
 
 //    implementation("com.android.support:appcompat-v7:25.3.1")
